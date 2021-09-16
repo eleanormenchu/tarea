@@ -1,0 +1,60 @@
+package uspg.edu.presentacion;
+
+/**
+ *
+ * @author Eleanor
+ */
+public class Persona {   
+    public String nombre;
+    public String apellido;
+    public String dirección;
+    public int id;
+    
+    public Persona(String nombre, String apellido, String direccion, int id){
+        this.nombre = nombre;
+        this.apellido = apellido;
+        this.dirección = direccion;
+        this.id = id;
+    }
+    
+    public Persona (){
+    }
+    
+    public void mostrarDatos(){
+        
+        System.out.println(this.nombre +"\t\t\t"+ this.apellido + "\t\t\t\t\t" + this.dirección + "\t\t\t\t" + this.id + "\n\n");
+    }
+    
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public String getApellido() {
+        return apellido;
+    }
+
+    public void setApellido(String apellido) {
+        this.apellido = apellido;
+    }
+
+    public String getDirección() {
+        return dirección;
+    }
+
+    public void setDirección(String dirección) {
+        this.dirección = dirección;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+    
+}
